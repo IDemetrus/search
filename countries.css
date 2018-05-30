@@ -1,0 +1,31 @@
+header h1{
+    text-align: center;
+}
+body{
+    margin: auto;
+}
+#regions {
+    padding-top: 5ex;
+    margin: auto;
+    text-align: center;
+}
+#regions ol {
+    text-align: left;
+    display: block;
+    width: 15ex;
+    margin: 3ex auto 3ex;
+}
+#curResult {
+    display: none;
+}
+#matches li{
+    list-style: none;
+}
+#btn {
+    display: none;
+}
+#map {
+    margin: auto;
+    margin-top: 3ex;
+    margin-bottom: 3ex;
+}
