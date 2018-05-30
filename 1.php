@@ -16,10 +16,19 @@ include('db.php'); ?>
   <header>
       <h1>Part #1</h1>
   </header>
-  <div id="regions">
-      <a href="index.php">Home</a>
-      <h3>Find all countries</h3>
-      <?php
+    <div id="nav">
+        <ul>
+            <li><a class="active" href="index.php">Home</a></li>
+            <li><a href="1.php">Part #1</a></li>
+            <li><a href="2.php">Part #2</a></li>
+            <li><a href="3.php">Part #3</a></li>
+            <li><a href="4.php">Part #4</a></li>
+            <li><a href="5.php">Part #5</a></li>
+            <li><a href="6.php">Part #6</a></li>
+        </ul>
+    </div>
+    <div id="regions">
+    <?php
       if($result = db()->query("SELECT * FROM country")){
           echo "<ol type='1'>";
           while ($country = $result->fetch_object()){
@@ -29,7 +38,7 @@ include('db.php'); ?>
           echo "</ol>";
           db()->close();
       }
-      ?>
+    ?>
   </div>
 </body>
 </html>

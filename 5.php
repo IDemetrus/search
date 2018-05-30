@@ -10,16 +10,25 @@
 <header>
     <h1>Part #6</h1>
 </header>
-<div id="regions">
-    <a href="index.php">Home</a>
-    <h3>Find cities of your country</h3>
+    <div id="nav">
+        <ul>
+            <li><a class="active" href="index.php">Home</a></li>
+            <li><a href="1.php">Part #1</a></li>
+            <li><a href="2.php">Part #2</a></li>
+            <li><a href="3.php">Part #3</a></li>
+            <li><a href="4.php">Part #4</a></li>
+            <li><a href="5.php">Part #5</a></li>
+            <li><a href="6.php">Part #6</a></li>
+        </ul>
+    </div>
+    <div id="regions">
     <form>
-        Search: <input type="text" id="inp" onkeyup="showResults(this.value)">
+        <input type="text" id="inp" placeholder="Search.." onkeyup="showResults(this.value)">
     </form>
     <ol id="matches"></ol>
     <div id="btn">
-        <button value="prev" onclick="showPagination(this.value)">Prev</button>
-        <button value="next" onclick="showPagination(this.value)">Next</button>
+        <input type="button" value="prev" onclick="showPagination(this.value)">
+        <input type="button" value="next" onclick="showPagination(this.value)">
     </div>
 </div>
 </body>
