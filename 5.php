@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-    <h1>Part #6</h1>
+    <h1>Part #5</h1>
 </header>
     <div id="nav">
         <ul>

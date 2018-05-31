@@ -1,8 +1,8 @@
 header {
     background-color: cadetblue;
     margin: auto;
-    padding-top: 2ex;
-    padding-bottom: 2ex;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
 }
 header h1{
     text-align: center;
@@ -35,9 +35,10 @@ body{
 
 }
 input[type=text], select {
+    font-family: Arial, Helvetica, sans-serif;
     width: 100ex;
     padding: 10px 10px;
-    margin: 2ex 0;
+    margin: 2ex auto;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -60,19 +61,21 @@ input[type=submit], input[type=button]:hover {
 }
 
 #regions {
-    margin: auto;
+    margin: 3ex auto;
     text-align: center;
     width: 100%;
 }
 #regions ol {
-    text-align: left;
     width: 100ex;
     margin: 5ex auto;
 } 
 #regions li{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
     list-style: none;
-    width: 95ex;
-    padding: 1ex 1ex;
+    width: 75ex;
+    padding: 1ex 2ex;
+    margin-right: 4ex;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -91,7 +94,7 @@ input[type=submit], input[type=button]:hover {
 }
 #nav {
     width: 100%;
-    margin: 0 auto 2ex;
+    margin: 0 auto;
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
 }
@@ -104,6 +107,7 @@ input[type=submit], input[type=button]:hover {
 }
 
 #nav li {
+    font-family: Arial, Helvetica, sans-serif;
     float: left;
 }
 
@@ -122,4 +126,23 @@ input[type=submit], input[type=button]:hover {
 #nav li a.active {
     color: white;
     background-color: #4CAF50;
+}
+#intro {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+#intro ol {
+    width: 100ex;
+    margin: 5ex auto;
+} 
+#intro li{
+    text-align: left;
+
+    list-style: none;
+    width: 65ex;
+    padding: 1ex 1ex;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
