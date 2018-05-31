@@ -2,11 +2,13 @@
 include('db.php');
 
 $coName = $_REQUEST["q"];
-echo "<div id='curResult'>".$coName."</div>";
 
-$coQuery = "SELECT id FROM country WHERE name LIKE '%{$coName}%'";
+$coQuery = "SELECT * FROM country WHERE name LIKE '%{$coName}%'";
 $coResult = db()->query($coQuery);
 if ($countries = $coResult->fetch_assoc()){
+    $countriesName = $countries['name'];
+    echo "<div id='curResult'>".$countriesName."</div>";
+
     $coId = $countries['id'];
     $coRows = $coResult->num_rows;
     $pageNew = 0;
@@ -26,7 +28,6 @@ if ($countries = $coResult->fetch_assoc()){
     while ($city = $ciResult->fetch_object()){	
         echo "<li>".$city->name."</li>";
     }
-
 }
 db()->close();
 ?>

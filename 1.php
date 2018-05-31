@@ -14,7 +14,7 @@ include('db.php'); ?>
 </head>
 <body>
   <header>
-      <h1>Part #1</h1>
+      <h3>Part #1</h3>
   </header>
     <div id="nav">
         <ul>

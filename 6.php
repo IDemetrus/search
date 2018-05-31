@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <h1>Part #6</h1>
+    <h3>Part #6</h3>
 </header>
     <div id="nav">
         <ul>
@@ -27,35 +27,24 @@
         <form>
             <input type="text" id="inp" placeholder="Search.." onkeyup="showResults(this.value)">
         </form>
-        <div id="map" style="width: 600px; height: 400px">
+        <div id="map" style="width: 100ex; height: 50ex">
             <script type="text/javascript">
-                ymaps.ready(init);
+                ymaps.load(init);
                     let myMap;
                     function init(){
                         myMap = new ymaps.Map("map", {
-                            center: [55.76, 37.64],
-                            zoom: 3
+                            center: [51.51, -0.08],
+                            zoom: 2
                         });
-                        let myGeocoder = ymaps.geocode("Moscow");
-                        myGeocoder.then(
-                            function (res) {
-                                myMap.geoObjects.add(res.geoObjects);
-                            }
-                        );
                     }
             </script>
         </div>
         <ol id="matches"></ol>
         <div id="btn">
-        <input type="button" value="prev" onclick="showPagination(this.value)">
-        <input type="button" value="next" onclick="showPagination(this.value)">
-    </div>
-        
+            <input type="button" value="prev" onclick="showPagination(this.value)">
+            <input type="button" value="next" onclick="showPagination(this.value)">
+        </div>
         <div id="mapResults"></div>
     </div>
-
-
 </body>
 </html>
-
-

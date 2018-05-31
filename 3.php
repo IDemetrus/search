@@ -65,7 +65,7 @@ function sel($a, $field)
 </head>
 <body>
 <header>
-    <h1>Part #3</h1>
+    <h3>Part #3</h3>
 </header>
     <div id="nav">
         <ul>
