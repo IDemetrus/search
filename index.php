@@ -28,7 +28,7 @@
         <h3><li>Part #3: Shows cities of current country, with pagination</li></h3>
         <h3><li>Part #4: Shows cities of current country, with pagination<br> by using "Search" button</li></h3>
         <h3><li>Part #5: Shows cities of current country, using only "Search" input <br>(by "AJAX")</li></h3>
-        <h3><li>Part #6: Shows cities of current country, <br>using "Search"(by "AJAX"), and marker them on the "Map"</li></h3>
+        <h3><li>Part #6: Shows cities of current country, <br>using "Search"(by "AJAX"), and marker them on the "Map"(<span class="red">in developing</span>)</li></h3>
     </ol>
     </div>
 </body>

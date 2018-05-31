@@ -146,3 +146,6 @@ input[type=submit], input[type=button]:hover {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+.red{
+    color: red;
+}
